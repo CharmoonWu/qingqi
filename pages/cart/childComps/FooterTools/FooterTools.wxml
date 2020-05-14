@@ -1,0 +1,17 @@
+<!-- 底部工具栏 -->
+<view class="footer_tools">
+  <view class="all_check">
+    <checkbox-group bindchange="allCheckedChange">
+      <checkbox color="#E42F14" checked="{{allChecked}}">全选</checkbox>
+    </checkbox-group>
+  </view>
+  <!-- 合计 -->
+  <view class="total_price">
+    <view class="total">合计：
+      <text>￥{{totalPrice}}</text>
+    </view>
+    <view>包含运费</view>
+  </view>
+  <!-- 结算 -->
+  <view class="pay" bindtap="handlePay">结算（{{totalNum}}）</view>
+</view>

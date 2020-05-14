@@ -1,0 +1,7 @@
+<!--pages/detail/childCpns/detail-goods/detail-goods.wxml-->
+<view class="goods">
+  <block wx:for="{{goods}}" wx:key="index">
+    <detail-goods-item class="item" item="{{item}}"/>
+  </block>
+
+</view>

@@ -1,0 +1,12 @@
+<view id="category">
+  <w-tab-menu categories="{{categories}}" class="left" bind:itemIndex="itemIndex" />
+
+  <scroll-view class="right" scroll-y bindscroll="rollUp" enable-back-to-top="true" scroll-with-animation="true">
+    <w-tab-content-category subcategories="{{categoryData[currentIndex].subcategories}}" />
+    <w-tab-control titles="{{titles}}" bind:tabClick="handleTabClick" />
+
+    <w-goods goods="{{categoryData[currentIndex].categoryDetail[currentType]}}" />
+    <w-back-top class="com-back-top" bindtap="backtop" wx:if="{{showTop}}" />
+
+  </scroll-view>
+</view>

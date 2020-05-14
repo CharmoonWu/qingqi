@@ -1,0 +1,5 @@
+<!-- 头部 -->
+<w-header />
+<w-info />
+<w-list-view infos="{{orderList}}" />
+<w-list-view infos="{{serviceList}}"/>

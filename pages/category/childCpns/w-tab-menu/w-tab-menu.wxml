@@ -1,0 +1,7 @@
+<scroll-view scroll-y enable-back-to-top="true" scroll-with-animation="true">
+  <block wx:for="{{categories}}" wx:key="index">
+    <view class="menu-list-item {{currentIndex === index ? 'active' : ''}}" bindtap="itemIndex" data-index="{{index}}">
+      <text>{{item.title}}</text>
+    </view>
+  </block>
+</scroll-view>

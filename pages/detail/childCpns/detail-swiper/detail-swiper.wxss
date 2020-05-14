@@ -1,0 +1,14 @@
+/* pages/detail/detail-swiper/detail-swiper.wxss */
+swiper{
+  height: 70vw;
+}
+swiper-item{
+display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+}
+.swiper-item image {
+  width: 62%;
+  
+}

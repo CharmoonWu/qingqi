@@ -1,0 +1,11 @@
+<view class="tab-content-category">
+  <block wx:for="{{subcategories}}" wx:key="index">
+    <view class="itembox">
+      <navigator url="{{item.link}}">
+        <image src="{{item.image}}" class="item-img" mode="widthFix"></image>
+        <view class="item-text">{{item.title}}</view>
+
+      </navigator>
+    </view>
+  </block>
+</view>

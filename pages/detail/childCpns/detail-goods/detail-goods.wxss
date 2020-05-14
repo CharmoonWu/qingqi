@@ -1,0 +1,2 @@
+/* pages/detail/childCpns/detail-goods/detail-goods.wxss */
+@import '../../../../components/w-goods/w-goods.wxss'

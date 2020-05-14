@@ -1,0 +1,17 @@
+scroll-view {
+  height: 100vh;
+}
+
+.menu-list-item {
+  height: 90rpx;
+  line-height: 90rpx;
+  text-align: center;
+  font-size: 28rpx;
+}
+
+.active {
+  font-weight: 700;
+  color: #ff8198;
+  background-color: #fff;
+  border-left: 6rpx solid #ff8198;
+}

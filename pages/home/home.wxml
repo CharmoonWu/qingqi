@@ -1,0 +1,11 @@
+<!-- pages/home/home.wxml --> 
+<w-swiper list="{{banners}}" />
+<w-recommend recommends="{{recommends}}" bind:imageload="handleImageLoad" />
+<w-popular />
+<w-tab-control titles="{{titles}}" bind:tabClick="handleTabClick" id="tab-control" class="{{isTabFixed ? 'fixed' :''}}" />
+<w-tab-control titles="{{titles}}" wx:if="{{isTabFixed}}" />
+<!-- 展示商品数据 -->
+<w-goods goods="{{goods[currentType].list}}" />
+<!-- 回到顶部 -->
+<!-- hidden: hidden属于对于自定义的组件是无效 -->
+<w-back-top wx:if="{{showBackTop}}" class="com-back-top" />

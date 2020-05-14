@@ -1,0 +1,7 @@
+/* pages/detail/detail.wxss */
+.com-back-top{
+  position: fixed;
+  right: 20rpx;
+  bottom: 120rpx;
+  z-index: 999;
+}

@@ -1,0 +1,19 @@
+{
+  "usingComponents": {
+    "w-tab-control": "/components/w-tab-control/w-tab-control",
+    "w-swiper": "/components/w-swiper/w-swiper",
+    "detail-swiper": "/pages/detail/childCpns/detail-swiper/detail-swiper",
+    "detail-base-info": "/pages/detail/childCpns/detail-base-info/detail-base-info",
+    "detail-shop-info": "/pages/detail/childCpns/detail-shop-info/detail-shop-info",
+    "detail-goods-info": "/pages/detail/childCpns/detail-goods-info/detail-goods-info",
+    "detail-param-info": "/pages/detail/childCpns/detail-param-info/detail-param-info",
+    "detail-comment-info": "/pages/detail/childCpns/detail-comment-info/detail-comment-info",
+    "detail-recommend-info": "/pages/detail/childCpns/detail-recommend-info/detail-recommend-info",
+    "w-back-top": "/components/w-back-top/w-back-top",
+    "detail-bottom-bar": "/pages/detail/childCpns/detail-bottom-bar/detail-bottom-bar"
+
+    
+  },
+  "navigationBarTitleText": "详情页",
+  "enablePullDownRefresh": true
+}

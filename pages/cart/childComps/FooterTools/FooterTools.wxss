@@ -1,0 +1,38 @@
+/* pages/cart/childComps/FooterTools/FooterTools.wxss */
+.footer_tools {
+  position: fixed;
+  width: 100vw;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  height: 90rpx;
+  padding-left: 20rpx;
+  border-top: 1px solid #F8F8F8;
+  background-color: #FEFEFE;
+}
+.footer_tools .all_check {
+  flex: 2;
+}
+.footer_tools .total_price {
+  text-align: right;
+  flex: 4;
+  margin-right: 20rpx;
+}
+.footer_tools .total_price .total {
+  font-weight: bold;
+  font-size: 32rpx;
+}
+.footer_tools .total_price .total text {
+  color: var(--themeColor);
+}
+.footer_tools .pay {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 40rpx;
+  color: white;
+  background-color: var(--themeColor);
+}

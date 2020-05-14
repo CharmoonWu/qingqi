@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+  "CartListItem": "/pages/cart/childComps/CartListItem/CartListItem",
+  "FooterTools": "/pages/cart/childComps/FooterTools/FooterTools"
+  },
+  "navigationBarTitleText": "购物车"
+ 
+}

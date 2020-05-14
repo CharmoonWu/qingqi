@@ -1,0 +1,26 @@
+<!--pages/detail/childCpns/detail-base-info/detail-base-info.wxml-->
+
+<view class="base-info" wx:if="{{Object.keys(goods).length !== 0}}">
+  <view class="info-title">
+    {{goods.title}}
+  </view>
+  <view class="info-price">
+    <text class="n-price">{{ goods.newPrice }}</text>
+    <text class="o-price">{{ goods.oldPrice }}</text>
+    <text class="discount">{{goods.oldPrice}}</text>
+
+  </view>
+  <view class="info-other">
+    <text>{{ goods.columns[0] }}</text>
+    <text>{{ goods.columns[1] }}</text>
+    <text>{{ goods.services[goods.services.length - 1].name }}</text>
+  </view>
+  <view class="info-service">
+    <text class="info-service-item" wx:for="{{goods.services.length - 1 }}" wx:key="index">
+     
+      <text class="textsize">{{ goods.services[item].name }}</text>
+    </text>
+  </view>
+
+
+</view>

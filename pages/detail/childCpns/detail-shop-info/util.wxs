@@ -1,0 +1,9 @@
+var filter =  function(aa) {
+  var newNum =  parseFloat(aa);
+  return newNum.toFixed(2)
+}
+var world = '给我展示出来吧';
+module.exports = {
+  filter: filter,
+  world: world
+}

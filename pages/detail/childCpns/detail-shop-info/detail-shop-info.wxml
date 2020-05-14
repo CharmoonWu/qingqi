@@ -1,0 +1,39 @@
+<wxs module="aa" src="./util.wxs"></wxs>
+<view class="shop-info">
+  <view class="shop-top">
+    <image src="{{shop.logo}}"></image>
+    <text class="title">{{shop.name}}</text>
+
+  </view>
+  <view class="shop-middle">
+    <view class="shop-middle-item shop-middle-left">
+      <view class="info-sells">
+        <view class="sells-count">{{shop.sells}}</view>
+        <view class="sells-text">总销量</view>
+      </view>
+      <view class="info-goods">
+        <view class="goods-count">{{shop.goodsCount}}</view>
+        <view class="goods-text">全部宝贝</view>
+      </view>
+    </view>
+    <view class="shop-middle-item shop-middle-right">
+      <view class="table">
+        <view class="table-tr" wx:for="{{shop.score}}" wx:key="index">
+          <text class="table-td">{{item.name}}</text>
+
+          <text class="table-td score {{item.isBetter ? 'score-better' : ''}}">{{aa.filter(item.score)}}</text>
+
+
+          <text class="table-td  better {{item.isBetter ? 'better-more' : ''}}">{{item.isBetter ? "高": "低"}}</text>
+
+        </view>
+      </view>
+    </view>
+
+
+  </view>
+
+</view>
+<view class="shop-bottom">
+  <view class="enter-shop">进店逛逛</view>
+</view>

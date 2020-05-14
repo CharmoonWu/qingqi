@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "detail-goods-item": "/pages/detail/childCpns/detail-goods-item/detail-goods-item"
+  }
+}

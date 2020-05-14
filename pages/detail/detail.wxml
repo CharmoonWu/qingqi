@@ -1,0 +1,23 @@
+<!--pages/detail/detail.wxml-->
+<view>
+  <w-tab-control titles="{{titles}}" id="tab-control" />
+  <!-- 1.轮播图展示 -->
+  <detail-swiper list="{{topImages}}" id="detail-swiper" bind:imageload="imageload"/>
+  <!-- 2.基本信息展示 -->
+  <detail-base-info goods="{{goods}}" id="detail-base-info" />
+  <!-- 3.描述信息展示 -->
+  <detail-shop-info shop="{{shop}}" id="detailShopInfo" id="detail-shop-info" />
+  <!-- 4.商品信息展示 -->
+  <detail-goods-info detailInfo="{{detailInfo}}" id="detail-goods-info" />
+  <!-- 5.获取参数的信息 -->
+  <detail-param-info paramInfo="{{paramInfo}}" id="detail-param-info" />
+  <!-- 6.获取评论信息 -->
+  <detail-comment-info commentInfo="{{commentInfo}}" id="detail-comment-info" />
+  <!-- 7.获取推荐列表 -->
+  <detail-recommend-info recommendList="{{recommendList}}" id="detail-recommend-info" />
+  <!-- 回到顶部 -->
+  <w-back-top wx:if="{{backTop}}" class="com-back-top"/>
+  <!-- 加入购物车 -->
+  <detail-bottom-bar bind:addCart="addCart"/>
+</view>
+<!-- <view wx:else>该商品没有详情页，请观看下一个</view> -->

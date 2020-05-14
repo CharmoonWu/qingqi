@@ -1,0 +1,18 @@
+<view class="cart">
+  <view class="revice_address_row">
+    <view class="address_btn" wx:if="{{!address.userName}}">
+      <button bind:tap="handelChooseAddress" type="primary" plain>获取收货地址</button>
+    </view>
+    <view wx:else class="address_info">
+      <view class="info">
+        <view>收货人：{{address.userName}}</view>
+        <view>{{ address.provinceName + address.cityName + address.countyName + address.detailInfo }}</view>
+      </view>
+      <view class="iphone">{{ address.telNumber }}</view>
+    </view>
+  </view>
+  <!-- 购物车内容 -->
+  <CartListItem cartItem="{{addCart}}" bind:operationGoods="operationGoods" bind:checkedChange="checkedChange" />
+  <!-- 底部工具栏 -->
+  <FooterTools allChecked="{{allChecked}}" bind:allCheckedChange="allCheckedChange" totalPrice="{{totalPrice}}" totalNum="{{totalNum}}" />
+</view>

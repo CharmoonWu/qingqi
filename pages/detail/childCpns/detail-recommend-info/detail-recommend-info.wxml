@@ -1,0 +1,8 @@
+<view class="recommend-info">
+  <view class="info-header">热门推荐</view>
+  <view class="grid-view">
+    <detail-goods goods="{{recommendList}}"/>
+  </view>
+
+
+</view>

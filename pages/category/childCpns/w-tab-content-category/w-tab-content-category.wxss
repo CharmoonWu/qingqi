@@ -1,0 +1,23 @@
+.tab-content-category {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 40rpx 16rpx;
+  /* justify-content: space-between; */
+}
+
+.itembox {
+  width: 138rpx;
+  margin-right: 16rpx;
+  text-align: center;
+  font-size: 24rpx;
+}
+
+.item-img {
+  width: 80%;
+}
+
+.item-text {
+  margin-top: 30rpx;
+  /* color: var(--themeColor); */
+}

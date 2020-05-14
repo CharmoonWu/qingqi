@@ -1,0 +1,25 @@
+<view>
+  <view class="comment-info">
+    <view class="info-header">
+      <view class="header-title">用户评价</view>
+      <view class="header-more">
+        <text class="more">更多</text>
+        <mp-icon icon="arrow" color="black" size="{{10}}" />
+      </view>
+    </view>
+    <view class="info-user">
+      <image src="{{commentInfo.user.avatar}}"></image>
+      <text>{{commentInfo.user.uname}}</text>
+    </view>
+    <view class="info-detail">
+      <text>{{commentInfo.content}}</text>
+      <view class="info-other">
+
+        <text>{{ commentInfo.style }}</text>
+      </view>
+      <view class="info-imgs">
+        <image src="{{item}}" wx:for="{{commentInfo.images}}" wx:key="index"></image>
+      </view>
+    </view>
+  </view>
+</view>

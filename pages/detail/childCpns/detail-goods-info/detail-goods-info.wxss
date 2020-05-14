@@ -1,0 +1,50 @@
+.goods-info {
+  padding: 40rpx 0;
+  border-bottom: 10rpx solid #f2f5f8;
+}
+
+.info-desc {
+  padding: 0 30rpx;
+}
+
+.info-desc .start, .info-desc .end {
+  width: 180rpx;
+  height: 2rpx;
+  background-color: #a3a3a5;
+  position: relative;
+}
+
+.info-desc .start {
+  float: left;
+}
+
+.info-desc .end {
+  float: right;
+}
+
+.info-desc .start::before, .info-desc .end::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background-color: #333;
+  bottom: 0;
+}
+
+.info-desc .end::after {
+  right: 0;
+}
+
+.info-desc .desc {
+  padding: 15px 0;
+  font-size: 14px;
+}
+.info-key {
+  margin: 10px 0 10px 15px;
+  color: #333;
+  font-size: 15px;
+}
+
+.info-list image {
+  width: 100%;
+}

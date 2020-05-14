@@ -1,0 +1,14 @@
+/* pages/home/home.wxss */
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.com-back-top{
+  position: fixed;
+  right: 20rpx;
+  bottom: 20rpx;
+  z-index: 999;
+}

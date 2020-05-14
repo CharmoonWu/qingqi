@@ -1,0 +1,11 @@
+page {
+  padding-bottom: 90rpx;
+}
+.address_btn {
+  padding: 20rpx 0;
+}
+.address_info {
+  display: flex;
+  justify-content: space-between;
+  padding: 20rpx;
+}

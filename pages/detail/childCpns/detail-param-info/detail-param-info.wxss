@@ -1,0 +1,37 @@
+.param-info{
+  padding: 40rpx 30rpx;
+  font-size: 28rpx;
+  border-bottom: 10rpx solid #f2f5f8; 
+}
+.param-info-table,.info-param-table{
+  width: 100%;
+  display: table;
+  border-collapse: collapse;
+  font-size: 28rpx;
+}
+.param-info-tr{
+  display: flex;
+}
+.param-info-td{
+  flex: 1;
+  text-align: center;
+  padding: 25rpx 0;
+}
+.params-infos{
+  height: 84rpx;
+  line-height: 84rpx;
+  display: flex;
+}
+.params-infos text{
+  border-bottom: 2rpx solid rgba(100,100,100,.1);
+  
+}
+.params-infos .infos-key{
+  width: 150rpx;
+}
+.params-infos .infos-value{
+  flex: 1;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
